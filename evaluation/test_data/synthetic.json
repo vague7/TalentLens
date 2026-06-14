@@ -1,0 +1,172 @@
+[
+  {
+    "question": "Python developer with at least 5 years of experience in Django and PostgreSQL. Familiarity with Docker and AWS.",
+    "contexts": [
+      "Experienced Backend Engineer. Skills: Python, Django, PostgreSQL, Docker, AWS. Over 6 years of experience building scalable web applications. Led migration to AWS.",
+      "Worked at TechCorp for 4 years using Python and Django. Managed PostgreSQL databases and containerized apps with Docker."
+    ],
+    "answer": "The candidate has 6 years of experience building scalable web applications. The candidate has skills in Python, Django, PostgreSQL, Docker, AWS. They led a migration to AWS.",
+    "ground_truth": "The candidate has over 5 years of Python/Django experience and meets the database and cloud requirements with PostgreSQL, Docker, and AWS."
+  },
+  {
+    "question": "Frontend engineer skilled in React, TypeScript, and CSS-in-JS. Minimum 3 years experience.",
+    "contexts": [
+      "Frontend Developer with 2 years of experience. Built UI components with React and JavaScript. Familiar with SCSS and Tailwind."
+    ],
+    "answer": "The candidate has 2 years of experience. They built UI components with React and JavaScript. They are familiar with SCSS and Tailwind.",
+    "ground_truth": "The candidate has only 2 years of experience, falling short of the 3-year minimum. They know React but lack TypeScript and CSS-in-JS."
+  },
+  {
+    "question": "Data Scientist with strong background in Machine Learning, PyTorch, and NLP. PhD preferred.",
+    "contexts": [
+      "PhD in Computer Science with focus on Natural Language Processing. 4 years of experience using PyTorch for deep learning models. Published 3 papers on Transformer architectures."
+    ],
+    "answer": "The candidate has a PhD in Computer Science focusing on Natural Language Processing. They have 4 years of experience using PyTorch for deep learning models.",
+    "ground_truth": "The candidate perfectly matches the requirements, holding a PhD in CS focusing on NLP, and 4 years of PyTorch experience."
+  },
+  {
+    "question": "DevOps Engineer required to manage Kubernetes clusters and CI/CD pipelines using Jenkins. Terraform experience is a plus.",
+    "contexts": [
+      "Systems Administrator with 5 years experience. Managed Linux servers and wrote bash scripts. Used Jenkins for CI/CD. No container orchestration experience."
+    ],
+    "answer": "The candidate is a Systems Administrator with 5 years of experience. They used Jenkins for CI/CD. They have no container orchestration experience.",
+    "ground_truth": "The candidate has Jenkins experience but lacks the required Kubernetes skills for container orchestration."
+  },
+  {
+    "question": "Senior Go Developer. Must have strong understanding of concurrency, gRPC, and microservices architecture.",
+    "contexts": [
+      "Senior Software Engineer. Primary language: Go. Designed and implemented microservices using gRPC. Strong knowledge of goroutines and channels for high concurrency.",
+      "Mentored junior developers and led the transition to a microservices architecture."
+    ],
+    "answer": "The candidate's primary language is Go. They designed and implemented microservices using gRPC. They have strong knowledge of goroutines and channels for high concurrency.",
+    "ground_truth": "The candidate meets all criteria with specific Go concurrency (goroutines/channels) and gRPC microservices experience."
+  },
+  {
+    "question": "Product Manager. Experience with Agile/Scrum, Jira, and cross-functional team leadership. Data-driven decision making.",
+    "contexts": [
+      "Certified Scrum Master. Led cross-functional teams of 10+ engineers and designers. Used Jira for sprint planning. Conducted A/B testing to drive product decisions, increasing engagement by 15%."
+    ],
+    "answer": "The candidate is a Certified Scrum Master who led cross-functional teams of 10+ engineers and designers. They used Jira for sprint planning and conducted A/B testing to drive product decisions.",
+    "ground_truth": "The candidate has Agile/Scrum, Jira, and cross-functional leadership experience. A/B testing demonstrates data-driven decision making."
+  },
+  {
+    "question": "UX/UI Designer. Proficiency in Figma and Adobe Creative Suite. Portfolio demonstrating mobile app design.",
+    "contexts": [
+      "Graphic Designer. Proficient in Adobe Photoshop and Illustrator. Created marketing materials and print layouts. Used Sketch for web design mockups."
+    ],
+    "answer": "The candidate is proficient in Adobe Photoshop and Illustrator. They created marketing materials and print layouts and used Sketch for web design mockups.",
+    "ground_truth": "The candidate lacks Figma proficiency and their background is primarily in print and web mockups, not mobile app design."
+  },
+  {
+    "question": "Full Stack Engineer. MERN stack (MongoDB, Express, React, Node.js). AWS deployment experience.",
+    "contexts": [
+      "Full Stack Developer. Specialized in the MERN stack (MongoDB, Express, React, Node.js) for 3 years. Deployed applications on Heroku and Vercel."
+    ],
+    "answer": "The candidate specialized in the MERN stack (MongoDB, Express, React, Node.js) for 3 years. They deployed applications on Heroku and Vercel.",
+    "ground_truth": "The candidate knows the MERN stack but lacks the required AWS deployment experience."
+  },
+  {
+    "question": "Cybersecurity Analyst. CompTIA Security+ or CISSP certification. Experience with SIEM tools and vulnerability scanning.",
+    "contexts": [
+      "Information Security Analyst. Hold CISSP certification. 3 years experience monitoring SIEM alerts (Splunk) and conducting weekly vulnerability scans using Nessus."
+    ],
+    "answer": "The candidate holds a CISSP certification. They have 3 years of experience monitoring SIEM alerts (Splunk) and conducting weekly vulnerability scans using Nessus.",
+    "ground_truth": "The candidate possesses the CISSP certification and has direct experience with SIEM (Splunk) and vulnerability scanning (Nessus)."
+  },
+  {
+    "question": "Mobile Developer. iOS (Swift) and Android (Kotlin) native development. Published apps on App Store and Google Play.",
+    "contexts": [
+      "Mobile Engineer. 4 years of experience building cross-platform apps using Flutter and Dart. Published 3 apps on both App Store and Google Play."
+    ],
+    "answer": "The candidate has 4 years of experience building cross-platform apps using Flutter and Dart. They have published 3 apps on both the App Store and Google Play.",
+    "ground_truth": "The candidate uses cross-platform tools (Flutter/Dart) rather than the required native development (Swift/Kotlin)."
+  },
+  {
+    "question": "Cloud Architect. AWS Certified Solutions Architect Professional. Experience designing multi-region fault-tolerant architectures.",
+    "contexts": [
+      "AWS Certified Solutions Architect - Professional. Designed multi-region active-active architectures ensuring 99.99% uptime. Expert in Route53, EC2, and DynamoDB global tables."
+    ],
+    "answer": "The candidate is an AWS Certified Solutions Architect - Professional. They designed multi-region active-active architectures ensuring 99.99% uptime.",
+    "ground_truth": "The candidate holds the exact required certification and has specific experience designing multi-region fault-tolerant architectures."
+  },
+  {
+    "question": "Database Administrator. Oracle DB and SQL Server experience. Performance tuning and backup/recovery strategies.",
+    "contexts": [
+      "DBA with 5 years experience managing SQL Server databases. Implemented automated backup and recovery strategies. Optimized slow queries. No Oracle experience."
+    ],
+    "answer": "The candidate has 5 years of experience managing SQL Server databases. They implemented automated backup and recovery strategies and optimized slow queries. They have no Oracle experience.",
+    "ground_truth": "The candidate has strong SQL Server, tuning, and backup experience, but lacks the required Oracle DB experience."
+  },
+  {
+    "question": "Machine Learning Engineer. Experience deploying models to production using SageMaker or Vertex AI. Strong Python skills.",
+    "contexts": [
+      "Data Scientist. Built predictive models using scikit-learn and pandas in Python. Delivered Jupyter notebooks with insights to stakeholders."
+    ],
+    "answer": "The candidate built predictive models using scikit-learn and pandas in Python. They delivered Jupyter notebooks with insights to stakeholders.",
+    "ground_truth": "The candidate has Python skills for modeling but lacks experience deploying models to production using tools like SageMaker or Vertex AI."
+  },
+  {
+    "question": "QA Automation Engineer. Selenium, Cypress, or Playwright. CI/CD integration. 3+ years experience.",
+    "contexts": [
+      "QA Engineer. 4 years of test automation experience using Cypress and Playwright. Integrated test suites into GitHub Actions CI/CD pipelines."
+    ],
+    "answer": "The candidate has 4 years of test automation experience using Cypress and Playwright. They integrated test suites into GitHub Actions CI/CD pipelines.",
+    "ground_truth": "The candidate exceeds the experience requirement and possesses the required Cypress, Playwright, and CI/CD integration skills."
+  },
+  {
+    "question": "Technical Writer. Ability to create API documentation using Swagger/OpenAPI. Experience with Markdown and Git.",
+    "contexts": [
+      "Technical Content Writer. Wrote blog posts, whitepapers, and user manuals. Used Microsoft Word and Google Docs. No experience with API documentation or Git."
+    ],
+    "answer": "The candidate wrote blog posts, whitepapers, and user manuals using Microsoft Word and Google Docs. They have no experience with API documentation or Git.",
+    "ground_truth": "The candidate does not have the required skills for API documentation (Swagger/OpenAPI), Markdown, or Git."
+  },
+  {
+    "question": "Blockchain Developer. Solidity smart contract development. Experience with Web3.js or Ethers.js.",
+    "contexts": [
+      "Web3 Developer. Wrote and audited smart contracts in Solidity for DeFi protocols. Built frontend dApp interfaces using React and Ethers.js."
+    ],
+    "answer": "The candidate wrote and audited smart contracts in Solidity for DeFi protocols. They built frontend dApp interfaces using React and Ethers.js.",
+    "ground_truth": "The candidate has the required Solidity smart contract development experience and uses Ethers.js."
+  },
+  {
+    "question": "Game Developer. Unity3D and C#. Experience with 3D math and physics engines.",
+    "contexts": [
+      "Game Programmer. 3 years experience with Unity3D and C#. Implemented custom physics logic and utilized 3D vector math for character movement and collisions."
+    ],
+    "answer": "The candidate has 3 years of experience with Unity3D and C#. They implemented custom physics logic and utilized 3D vector math for character movement and collisions.",
+    "ground_truth": "The candidate matches the Unity3D and C# requirements and has demonstrated experience with 3D math and physics."
+  },
+  {
+    "question": "Salesforce Developer. Apex, Visualforce, and Lightning Web Components (LWC). Platform Developer I certification.",
+    "contexts": [
+      "Salesforce Administrator. Managed user roles, created custom fields, and built reports and dashboards. Certified Salesforce Administrator. Minimal coding experience."
+    ],
+    "answer": "The candidate is a Certified Salesforce Administrator who managed user roles, created custom fields, and built reports. They have minimal coding experience.",
+    "ground_truth": "The candidate is an admin, not a developer, lacking Apex, LWC, and Platform Developer I certification."
+  },
+  {
+    "question": "Site Reliability Engineer. Strong Linux administration, Golang or Python scripting, and Prometheus/Grafana monitoring.",
+    "contexts": [
+      "SRE with strong Linux background. Wrote automation scripts in Python. Set up comprehensive monitoring alerts using Prometheus and built Grafana dashboards."
+    ],
+    "answer": "The candidate is an SRE with a strong Linux background. They wrote automation scripts in Python and set up monitoring alerts using Prometheus and Grafana.",
+    "ground_truth": "The candidate meets all requirements: Linux administration, Python scripting, and Prometheus/Grafana monitoring."
+  },
+  {
+    "question": "Rust Engineer. Systems programming experience. Familiarity with memory safety and zero-cost abstractions.",
+    "contexts": [
+      "Software Engineer. 5 years of C++ systems programming. Recently learned Rust and wrote small CLI tools, but no production Rust experience."
+    ],
+    "answer": "The candidate has 5 years of C++ systems programming experience. They recently learned Rust and wrote small CLI tools, but lack production Rust experience.",
+    "ground_truth": "The candidate has systems programming experience but lacks the production-level Rust experience implied for a dedicated Rust Engineer."
+  },
+  {
+    "question": "IT Support Specialist. Experience with Windows and macOS troubleshooting, Active Directory, and ticketing systems (Zendesk or Jira).",
+    "contexts": [
+      "IT Helpdesk Technician. Handled 50+ daily tickets via Zendesk. Troubleshot hardware and software issues on Windows and macOS. Managed user accounts in Active Directory."
+    ],
+    "answer": "The candidate handled tickets via Zendesk, troubleshot issues on Windows and macOS, and managed user accounts in Active Directory.",
+    "ground_truth": "The candidate perfectly matches the IT Support requirements including cross-platform troubleshooting, Active Directory, and Zendesk."
+  }
+]
