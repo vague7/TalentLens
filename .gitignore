@@ -1,0 +1,44 @@
+# ── Environment ─────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ──────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual environment ─────────────────
+.venv/
+venv/
+env/
+
+# ── IDE ─────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Testing / Coverage ─────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# ── Data & Results ──────────────────────
+data/uploads/*
+!data/uploads/.gitkeep
+results/*.json
+
+# ── Docker ──────────────────────────────
+chroma_data/
+
+# ── Node / Frontend ────────────────────
+frontend/node_modules/
+frontend/dist/

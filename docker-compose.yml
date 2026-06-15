@@ -1,0 +1,62 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Resume Screener — Docker Compose
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+version: "3.9"
+
+services:
+  # ── ChromaDB (self-hosted vector store) ──
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: resume-screener-chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── FastAPI backend ──────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: resume-screener-api
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+    volumes:
+      - ./data/uploads:/app/data/uploads
+      - ./results:/app/results
+    depends_on:
+      chromadb:
+        condition: service_healthy
+
+  # ── Streamlit eval dashboard ─────────────
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: resume-screener-dashboard
+    command: ["streamlit", "run", "evaluation/dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./results:/app/results
+    depends_on:
+      - api
+
+volumes:
+  chroma_data:
+    driver: local
